@@ -25,26 +25,43 @@ The AI-Powered Dataset Analyzer is a web application that allows users to upload
 ```bash
 AI-Powered-Dataset-Analyzer/
 ├── backend/
-│ ├── app/
+│ ├── src/
+│ │ ├── Agent_prompts.py
+│ │ ├── Agent_tools.py
 │ │ ├── main.py
-│ │ ├── routers/
-│ │ ├── models/
-│ │ └── services/
-│ ├── database.py
-│ ├── **init**.py
+│ ├── .dockerignore
 │ ├── requirements.txt
 │ └── Dockerfile
 ├── frontend/
-│ ├── lib/
-│ ├── main.dart
-│ ├── screens/
-│ ├── widgets/
-│ ├── models/
-│ └── pubspec.yaml
-├── Dockerfile
-├── docs/
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── DataChart.js
+│ │ │ ├── DataTable.js
+│ │ │ ├── FullScreenChartDialog.js
+│ │ │ ├── Header.js
+│ │ │ ├── Insights.js
+│ │ │ ├── Loader.js
+│ │ │ └── PreviousInsights.js
+│ │ ├── pages/
+│ │ │ ├── Dashboard.js
+│ │ │ └── Home.js
+│ │ ├── services/
+│ │ │ └── api.js
+│ │ ├── App.css
+│ │ ├── App.js
+│ │ ├── index.css
+│ │ ├── index.js
+│ │ └── theme.js
+│ ├── .dockerignore
+│ ├── Dockerfile
+│ ├── README.md
+│ ├── nginx.conf
+│ ├── package-lock.json
+│ └── package.json
+├── .gitignore
+├── LICENSE
 ├── docker-compose.yml
-├── data/
 └── README.md
 ```
 
