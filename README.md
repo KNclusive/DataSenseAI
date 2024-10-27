@@ -16,7 +16,7 @@ The AI-Powered Dataset Analyzer is a web application that allows users to upload
 
 - **Backend**: Python, FastAPI
 - **Frontend**: React
-- **AI Models**: OpenAI GPT-3/GPT-4
+- **AI Models**: OpenAI GPT-4o-mini
 - **Data Processing**: Pandas, NumPy
 - **In-Memory Data Store**: Redis
 - **Deployment**: Docker, Docker Compose
@@ -25,34 +25,51 @@ The AI-Powered Dataset Analyzer is a web application that allows users to upload
 ```bash
 AI-Powered-Dataset-Analyzer/
 ├── backend/
-│ ├── app/
+│ ├── src/
+│ │ ├── Agent_prompts.py
+│ │ ├── Agent_tools.py
 │ │ ├── main.py
-│ │ ├── routers/
-│ │ ├── models/
-│ │ └── services/
-│ ├── database.py
-│ ├── **init**.py
+│ ├── .dockerignore
 │ ├── requirements.txt
 │ └── Dockerfile
 ├── frontend/
-│ ├── lib/
-│ ├── main.dart
-│ ├── screens/
-│ ├── widgets/
-│ ├── models/
-│ └── pubspec.yaml
-├── Dockerfile
-├── docs/
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── DataChart.js
+│ │ │ ├── DataTable.js
+│ │ │ ├── FullScreenChartDialog.js
+│ │ │ ├── Header.js
+│ │ │ ├── Insights.js
+│ │ │ ├── Loader.js
+│ │ │ └── PreviousInsights.js
+│ │ ├── pages/
+│ │ │ ├── Dashboard.js
+│ │ │ └── Home.js
+│ │ ├── services/
+│ │ │ └── api.js
+│ │ ├── App.css
+│ │ ├── App.js
+│ │ ├── index.css
+│ │ ├── index.js
+│ │ └── theme.js
+│ ├── .dockerignore
+│ ├── Dockerfile
+│ ├── README.md
+│ ├── nginx.conf
+│ ├── package-lock.json
+│ └── package.json
+├── .gitignore
+├── LICENSE
 ├── docker-compose.yml
-├── data/
 └── README.md
 ```
 
 ## Setup Instructions
-
+- [Run Instructions](#run-code)
 - [Backend Setup](#backend-setup)
 - [Frontend Setup](#frontend-setup)
-- [Deployment](#deployment)
+- [Deployment](#deployment-setup)
 
 ## License
 
@@ -93,4 +110,13 @@ MIT License
 
 ## Deployment Setup
 
-Instructions on how to deploy the application using docker are provided in docs/DEPLOYMENT.md
+Instructions on how to deploy the application using docker are provided in docs/DEPLOYMENT.md (Comming Soon)
+
+## Run Code
+
+```bash
+cd AI-Powered-Dataset-Analyzer
+docker-compose build
+docker-compose up
+```
+Add your API_Keys And Environment Variables in the docker-compose.yaml environment for backend and frontend and run the above code to run this project locally.
