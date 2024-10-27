@@ -16,7 +16,7 @@ The AI-Powered Dataset Analyzer is a web application that allows users to upload
 
 - **Backend**: Python, FastAPI
 - **Frontend**: React
-- **AI Models**: OpenAI GPT-3/GPT-4
+- **AI Models**: OpenAI GPT-4o-mini
 - **Data Processing**: Pandas, NumPy
 - **In-Memory Data Store**: Redis
 - **Deployment**: Docker, Docker Compose
@@ -49,7 +49,7 @@ AI-Powered-Dataset-Analyzer/
 ```
 
 ## Setup Instructions
-
+- [Run Instructions](#run)
 - [Backend Setup](#backend-setup)
 - [Frontend Setup](#frontend-setup)
 - [Deployment](#deployment)
@@ -93,4 +93,13 @@ MIT License
 
 ## Deployment Setup
 
-Instructions on how to deploy the application using docker are provided in docs/DEPLOYMENT.md
+Instructions on how to deploy the application using docker are provided in docs/DEPLOYMENT.md (Comming Soon)
+
+## Run Code
+
+```bash
+cd AI-Powered-Dataset-Analyzer
+docker-compose build
+docker-compose up
+```
+Add your API_Keys And Environment Variables in the docker-compose.yaml environment for backend and frontend and run the above code to run this project locally.
