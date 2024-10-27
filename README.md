@@ -69,7 +69,7 @@ AI-Powered-Dataset-Analyzer/
 - [Run Instructions](#run-code)
 - [Backend Setup](#backend-setup)
 - [Frontend Setup](#frontend-setup)
-- [Deployment](#deployment)
+- [Deployment](#deployment-setup)
 
 ## License
 
