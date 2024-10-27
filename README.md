@@ -66,7 +66,7 @@ AI-Powered-Dataset-Analyzer/
 ```
 
 ## Setup Instructions
-- [Run Instructions](#run)
+- [Run Instructions](#run-code)
 - [Backend Setup](#backend-setup)
 - [Frontend Setup](#frontend-setup)
 - [Deployment](#deployment)
