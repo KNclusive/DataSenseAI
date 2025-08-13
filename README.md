@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The AI-Powered Dataset Analyzer is a web application that allows users to upload and analyze survey datasets using an AI-powered Retrieval-Augmented Generation (RAG) pipeline. The application processes datasets in-memory during user sessions, ensuring privacy and efficiency.
+The DataSenseAI is a web application that allows users to upload and analyze datasets using an AI-powered Agent pipeline. The application processes datasets in-memory during user sessions, ensuring privacy and efficiency.
 
 ## Features
 
